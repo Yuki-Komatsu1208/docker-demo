@@ -1,9 +1,9 @@
-FROM gradle:7 AS Base
+FROM gradle:7 AS base
 CMD ["bash"]
 
 
 #build
-FROM Base AS build
+FROM base AS build
 COPY . /workspace
 WORKDIR /workspace
 RUN ./gradlew build
