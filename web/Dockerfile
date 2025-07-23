@@ -1,9 +1,9 @@
-FROM node:18 AS BASE
+FROM node:18 AS Base
 CMD [ "bash" ]
 
 
 #build
-FROM BASE AS test-and-build
+FROM Base AS test-and-build
 COPY . /workspace
 WORKDIR /workspace
 ARG REACT_APP_API_SERVER

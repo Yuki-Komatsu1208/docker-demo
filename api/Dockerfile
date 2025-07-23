@@ -1,4 +1,4 @@
-FROM gradle:7 AS BASE
+FROM gradle:7 AS Base
 CMD ["bash"]
 
 
